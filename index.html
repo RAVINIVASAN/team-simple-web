@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Team Page</title>
+    <title>Team Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>Team Login</h1>
-<input id="user" placeholder="Username">
-<input id="pass" type="password" placeholder="Password">
-<button onclick="login()">Login</button>
-<p id="msg"></p>
+<nav>
+    <h2>TeamSite</h2>
+    <ul>
+        <li><a href="#" onclick="showHome()">Home</a></li>
+        <li><a href="#" onclick="showAbout()">About</a></li>
+        <li><a href="#" onclick="showContact()">Contact</a></li>
+    </ul>
+</nav>
+
+<div id="content">
+    <h1>Welcome to Our Website</h1>
+</div>
 
 <script src="script.js"></script>
 </body>
