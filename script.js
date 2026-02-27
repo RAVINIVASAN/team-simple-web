@@ -1,14 +1,16 @@
-function showHome() {
-    document.getElementById("content").innerHTML =
-        "<h1>Welcome to Home Page</h1>";
+function scrollToSection(id) {
+  document.getElementById(id).scrollIntoView({
+    behavior: "smooth"
+  });
 }
 
-function showAbout() {
-    document.getElementById("content").innerHTML =
-        "<h1>About Us</h1><p>This project is built by Diva & Ravi.</p>";
+function showMessage() {
+  document.getElementById("msg").innerText =
+    "Message sent successfully!";
 }
 
-function showContact() {
-    document.getElementById("content").innerHTML =
-        "<h1>Contact</h1><p>Email: team@example.com</p>";
-}
+window.addEventListener("scroll", function () {
+  const nav = document.querySelector(".navbar");
+  nav.style.background =
+    window.scrollY > 50 ? "#0f172a" : "#111827";
+});
