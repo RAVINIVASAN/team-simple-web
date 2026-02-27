@@ -1,23 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Team Website</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>DevTeam Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav>
-    <h2>TeamSite</h2>
-    <ul>
-        <li><a href="#" onclick="showHome()">Home</a></li>
-        <li><a href="#" onclick="showAbout()">About</a></li>
-        <li><a href="#" onclick="showContact()">Contact</a></li>
+<header>
+  <nav class="navbar">
+    <div class="logo">DevTeam</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
-</nav>
+  </nav>
+</header>
 
-<div id="content">
-    <h1>Welcome to Our Website</h1>
-</div>
+<section id="home" class="section hero">
+  <h1>Building Modern Web Experiences</h1>
+  <button onclick="scrollToSection('contact')">Get Started</button>
+</section>
+
+<section id="about" class="section">
+  <h2>About Us</h2>
+  <p>We are a passionate development team creating clean and modern web applications.</p>
+</section>
+
+<section id="services" class="section cards">
+  <div class="card">Web Design</div>
+  <div class="card">Frontend Dev</div>
+  <div class="card">UI/UX Design</div>
+</section>
+
+<section id="contact" class="section">
+  <h2>Contact</h2>
+  <input type="text" placeholder="Your Name">
+  <input type="email" placeholder="Your Email">
+  <button onclick="showMessage()">Send</button>
+  <p id="msg"></p>
+</section>
 
 <script src="script.js"></script>
 </body>
